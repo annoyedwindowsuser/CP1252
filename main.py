@@ -1,4 +1,7 @@
 # cp1252_lowercase_mapper.py
+import arrr
+from pyscript import document
+
 
 def get_cp1252_chars():
     """
@@ -69,4 +72,5 @@ def UTP():
 
 if __name__ == "__main__":
     main()
+
 
