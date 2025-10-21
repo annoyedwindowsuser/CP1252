@@ -62,6 +62,11 @@ def main():
     else:
         print("Invalid choice. Please select 1 or 2.")
 
+def UTP():
+        result = encode_text(text, encode_map)
+        print("\nEncoded result:")
+        print(result)
 
 if __name__ == "__main__":
     main()
+
