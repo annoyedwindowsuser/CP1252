@@ -38,35 +38,9 @@ def decode_text(text, decode_map):
     """
     return ''.join(decode_map.get(c, c) for c in text)
 
-
-def main():
-    encode_map, decode_map = build_lowercase_mapping()
-
-    print("=== Lowercase ↔ CP1252 Mapper ===")
-    print("1. Encode (a–z → CP1252 characters)")
-    print("2. Decode (CP1252 characters → a–z)")
-    choice = input("Choose (1/2): ").strip()
-
-    if choice == "1":
-        text = input("Enter lowercase text to encode: ")
-        result = encode_text(text, encode_map)
-        print("\nEncoded result:")
-        print(result)
-    elif choice == "2":
-        text = input("Enter CP1252 text to decode: ")
-        result = decode_text(text, decode_map)
-        print("\nDecoded result:")
-        print(result)
-    else:
-        print("Invalid choice. Please select 1 or 2.")
-
-def UTP():
-        result = encode_text(text, encode_map)
-        print("\nEncoded result:")
-        print(result)
-
 if __name__ == "__main__":
     main()
+
 
 
 
