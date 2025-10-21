@@ -30,11 +30,6 @@ def build_lowercase_mapping():
     return encode_map, decode_map
 
 
-def encode_text(text, encode_map):
-    """
-    Encodes lowercase letters using the encode map. Leaves other characters unchanged.
-    """
-    return ''.join(encode_map.get(c, c) for c in text)
 
 
 def decode_text(text, decode_map):
@@ -72,5 +67,6 @@ def UTP():
 
 if __name__ == "__main__":
     main()
+
 
 
